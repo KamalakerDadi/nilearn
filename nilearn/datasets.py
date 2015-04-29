@@ -2424,6 +2424,7 @@ def load_mni152_template():
     """
     package_directory = os.path.dirname(os.path.abspath(__file__))
     path = os.path.join(package_directory, "data", "avg152T1_brain.nii.gz")
+    #path = os.path.join(package_directory, "data", "canica_resting_state.nii.gz")
 
     # XXX Should we load the image here?
     return load_img(path)
@@ -2568,7 +2569,7 @@ def fetch_abide_pcp(data_dir=None, n_subjects=None, pipeline='cpac',
     pheno = BytesIO(pheno)
     # We enforce a magic string  forcomments because it is 'sharp' by default,
     #   and Python 3.4 doesn't like empty
-    pheno = np.recfromcsv(pheno, comments='__magic_string__', case_sensitive=True)
+    pheno = np.recfromcsv(pheno, comments='$', case_sensitive=True)
 
     # First, filter subjects with no filename
     pheno = pheno[pheno['FILE_ID'] != b'no_filename']
