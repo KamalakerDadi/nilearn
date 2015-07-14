@@ -40,7 +40,7 @@ different heuristics to find cutting coordinates.
      :target: ../auto_examples/manipulating_visualizing/plot_demo_plotting.html
      :scale: 50
 
-.. |plot_prob_atlas| image:: ../auto_examples/manipulating_visualizing/images/plot_prob_atlas_005.png
+.. |plot_prob_atlas| image:: ../auto_examples/manipulating_visualizing/images/plot_prob_atlas_010.png
      :target: ../auto_examples/manipulating_visualizing/plot_prob_atlas.html
      :scale: 50
 
@@ -223,7 +223,7 @@ plot, and has methods to add overlays, contours or edge maps::
                   |hack|
                   Add a new overlay on the existing figure
                    |hack|
-                   **Example:** :ref:`example_manipulating_visualizing_plot_probabilistic_atlas.py`
+                   **Example:** :ref:`example_manipulating_visualizing_plot_overlay.py`
 
 
 ================= =========================================================
